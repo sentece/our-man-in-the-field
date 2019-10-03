@@ -1,7 +1,7 @@
 import { createAppContainer } from "react-navigation";
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import { MainNavigator } from "./Menu/MainNavigator";
+import { MainNavigator, NavigatorConfig} from "./Menu/MainNavigator";
 
-const App = createAppContainer(createDrawerNavigator(MainNavigator));
+const App = createAppContainer(createDrawerNavigator(MainNavigator, NavigatorConfig));
 
 export default App;

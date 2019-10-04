@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, ImageBackground } from 'react-native';
 import { CustomHeader } from '../Menu/CustomHeader';
-import Config from '../Config/Config'
+import Config from '../../Config/Config'
 
 export default HomeScreen = (props) => 
 {

@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { RefreshControl } from 'react-native';
+import { RefreshControl, Text, View } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { CustomHeader } from '../Menu/CustomHeader';
+import Flag from 'react-native-flags';
 import { GetGigs } from '../../Reducers/Gigs'
 import { format } from 'date-fns'
 import { FlatList } from 'react-native-gesture-handler';
-import {dateSort} from '../../Utils'
+import { dateSort } from '../../Utils'
 
 class GigsScreen extends Component {
     componentDidMount() {
@@ -41,7 +42,7 @@ class GigsScreen extends Component {
                         title={format(new Date(item.date), 'MMMM do, yyyy')}
                         titleStyle={{ color: '#EDC068', backgroundColor: "#000" }}
                         subtitle={item.location}
-                        style={{ backgroundColor: "#000" }}
+                        rightIcon={<Flag code={item.country} size={32} />}
                         subtitleStyle={{ color: '#fff' }}
                         containerStyle={{ backgroundColor: "#000" }}
 

@@ -6,17 +6,6 @@ import GigsScreen from "../Gigs/GigsScreen";
 export const NavigatorConfig = {
   drawerType: 'front',//'back','slide'
   intialRouteName: 'Gigs',
-  headerMode: 'float',
-  navigationOptions: {
-    title: 'this is the header',
-    headerStyle: {
-      backgroundColor: '#f4511e',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      color: 'white',
-    },
-  },
   contentOptions: {
     activeTintColor: '#EDC068',
     inactiveTintColor : 'white',
@@ -34,14 +23,14 @@ export const MainNavigator ={
   Home: {
     navigationOptions: {
       drawerIcon: ({ tintColor }) => (<Ionicons name="md-home" style={{ color: tintColor }} />),
-      drawerLabel: "Home"
+      drawerLabel: 'Home'
     },
     screen: HomeScreen
   },
   Gigs: {
     navigationOptions: {
       drawerIcon: ({ tintColor }) => (<Ionicons name="md-settings" style={{ color: tintColor }} />),
-      drawerLabel: "Gigs"
+      drawerLabel: 'Gigs'
     },
     screen: GigsScreen
   },

@@ -12,7 +12,6 @@ export default function reducer(state = { gigs: [] }, action) {
                 loading: true
             };
         case GET_GIGS_SUCCESS:
-            console.log(action.payload.data);
             return {
                 ...state,
                 loading: false,

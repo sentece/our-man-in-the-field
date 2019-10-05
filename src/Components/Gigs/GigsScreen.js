@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { View, Text, RefreshControl } from 'react-native';
-import { List, ListItem } from 'react-native-elements';
-import { Styles } from '../../Style/Stylesheet';
+import { RefreshControl } from 'react-native';
+import { ListItem } from 'react-native-elements';
 import { CustomHeader } from '../Menu/CustomHeader';
 import { GetGigs } from '../../Reducers/Gigs'
 import { format } from 'date-fns'
 import { FlatList } from 'react-native-gesture-handler';
+import {dateSort} from '../../Utils'
 
 class GigsScreen extends Component {
     componentDidMount() {
@@ -27,10 +27,10 @@ class GigsScreen extends Component {
         return (
             <Fragment>
                 <CustomHeader navigation={this.props.navigation} style={{ backgroundColor: "#000" }}></CustomHeader>
-                <FlatList data={this.props.gigs.gigs}
+                <FlatList data={this.props.gigs.gigs.sort(dateSort)}
                     style={{ backgroundColor: "#000" }}
                     keyExtractor={(item, index) => String(index)}
-                    
+
                     refreshControl={
                         <RefreshControl
                             refreshing={this.props.gigs.loading}

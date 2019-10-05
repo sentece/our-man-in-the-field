@@ -29,7 +29,7 @@ export const MainNavigator ={
   },
   Gigs: {
     navigationOptions: {
-      drawerIcon: ({ tintColor }) => (<Ionicons name="md-settings" style={{ color: tintColor }} />),
+      drawerIcon: ({ tintColor }) => (<Ionicons name="md-calendar" style={{ color: tintColor }} />),
       drawerLabel: 'Gigs'
     },
     screen: GigsScreen

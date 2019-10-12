@@ -14,10 +14,10 @@
       "web"
     ],
     "ios": {
-      "bundleIdentifier": "com.omitf.app"
+      "bundleIdentifier": "com.ourmaninthefield"
     },
     "android": {
-      "package": "com.omitf.app"
+      "package": "com.ourmaninthefield"
     }
   }
 }

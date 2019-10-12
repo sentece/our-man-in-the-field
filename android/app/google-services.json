@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691645897093",
+    "firebase_url": "https://our-man-in-the-field.firebaseio.com",
+    "project_id": "our-man-in-the-field",
+    "storage_bucket": "our-man-in-the-field.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691645897093:android:85fbca264b77a70ca60cec",
+        "android_client_info": {
+          "package_name": "com.ourmaninthefield"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691645897093-lpb8bc6m10blr299d9c9moh52ndq9jqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ZvwRZVbkzRoWDJ91hALmMkgWBRIdCcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691645897093-lpb8bc6m10blr299d9c9moh52ndq9jqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

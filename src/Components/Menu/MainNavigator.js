@@ -1,9 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
 import React from 'react';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import HomeScreen from "../Home/HomeScreen";
 import GigsScreen from "../Gigs/GigsScreen";
 
-export const NavigatorConfig = {
+
+const NavigatorConfig = {
   drawerType: 'front',//'back','slide'
   intialRouteName: 'Gigs',
   contentOptions: {
@@ -19,7 +21,7 @@ export const NavigatorConfig = {
   drawerBackgroundColor: '#000000',
 };
 
-export const MainNavigator ={
+const MainNavigator ={
   Home: {
     navigationOptions: {
       drawerIcon: ({ tintColor }) => (<Ionicons name="md-home" style={{ color: tintColor }} />),
@@ -35,3 +37,5 @@ export const MainNavigator ={
     screen: GigsScreen
   },
 };
+
+export default createDrawerNavigator(MainNavigator, NavigatorConfig);
